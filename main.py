@@ -1,5 +1,5 @@
 from transformers import pipeline, AutoModelWithLMHead, AutoTokenizer
-from flask import Flask, request, 
+from flask import Flask, request, render_template
 
 app = Flask(__name__)
 
