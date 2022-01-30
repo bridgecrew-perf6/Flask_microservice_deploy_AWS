@@ -4,12 +4,12 @@
         <title>Translation</title>
     </head>
     <body>
-        <p>Please enter the text you want to translate (from chinese to english):</p
+        <p>Please enter the text you want to translate (from chinese to english):</p>
         <form method="POST">
             <input type="text" name="text">
             <input type="submit" value="translate">
         </form>
-        {% if trans_text %}
+        {% if name %}
         </br>{{trans_text}}
         {% endif %}
     </body>

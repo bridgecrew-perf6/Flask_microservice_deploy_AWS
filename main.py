@@ -10,7 +10,7 @@ def translate(text):
     translated_text = translation(text, max_length=40)[0]['translation_text']
     return translated_text
     
-@app.route('/')
+@app.route('/', methods=['GET', 'POST'])
 def do_translate():
     if request.method == 'POST':
         text = request.form['text']
