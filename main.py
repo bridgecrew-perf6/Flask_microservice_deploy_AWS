@@ -1,5 +1,5 @@
-from transformers import pipeline, AutoModelWithLMHead, 
-from flask import Flask
+from transformers import pipeline, AutoModelWithLMHead, AutoTokenizer
+from flask import Flask, request, render_template
 
 def translate(text):
     model = AutoModelWithLMHead.from_pretrained("Helsinki-NLP/opus-mt-zh-en")
@@ -8,8 +8,9 @@ def translate(text):
     translated_text = translation(text, max_length=40)[0]['translation_text']
     return translated_text
     
-#@app.route('/')
-#async def do_translate():
+@app.route('/')
+def do_translate():
+    return
     
     
     
