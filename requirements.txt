@@ -1,5 +1,6 @@
 pytest==6.2.5
 pylint==2.12.2
 black==21.12b0
+pip install transformers[sentencepiece]
 --find-links https://download.pytorch.org/whl/torch_stable.html
 torch==1.2.0+cpu
