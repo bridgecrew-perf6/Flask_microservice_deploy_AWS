@@ -1,5 +1,7 @@
 from transformers import pipeline, AutoModelWithLMHead, AutoTokenizer
-from flask import Flask, request, render_template
+from flask import Flask, request, 
+
+app = Flask(__name__)
 
 def translate(text):
     model = AutoModelWithLMHead.from_pretrained("Helsinki-NLP/opus-mt-zh-en")
@@ -10,7 +12,11 @@ def translate(text):
     
 @app.route('/')
 def do_translate():
-    return
+    if request.method == 'POST':
+        text = request.form['text']
+        trans_text = translate(text)
+        return render_template('translate.html', name=1, trans_text=trans_text)
+    return render_template('translate.html', name=0)
     
     
     
