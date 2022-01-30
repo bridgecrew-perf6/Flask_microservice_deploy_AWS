@@ -18,4 +18,4 @@ To use this app, go to website https://cm2uvp39yf.us-east-1.awsapprunner.com/, e
 ## How to deploy
 To deploy this app on AWS, follow the step:
 
-#### login into AWS Management Console (https://console.aws.amazon.com/console/)
+- login into AWS Management Console (https://console.aws.amazon.com/console/)
