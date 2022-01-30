@@ -8,8 +8,8 @@ def translate(text):
     translated_text = translation(text, max_length=40)[0]['translation_text']
     return translated_text
     
-@app.get("/")
-async def do_translate():
+#@app.route('/')
+#async def do_translate():
     
     
     
