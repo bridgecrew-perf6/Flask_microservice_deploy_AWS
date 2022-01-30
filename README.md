@@ -5,6 +5,8 @@ This is duke ids721 project1. This project builds a translation microservice usi
 
 ## How to use
 To use this app, go to website https://cm2uvp39yf.us-east-1.awsapprunner.com/, enter the chinese text you want to translate, and hit "translate" button.
+
+
 ![image](https://user-images.githubusercontent.com/90477174/151687738-a2016c36-7f58-4e21-988a-61483affe767.png)
 
 
