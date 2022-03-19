@@ -26,7 +26,7 @@ To deploy this app on AWS using AWS App Runner, follow the step:
 - In the following page, in "Source" section, select "Source code repository" and add your github repo which contains source code of this app.
 - In "Deployment settings" section, select "Automatic" to automaticlly deploy your code.
 - Click "next" and go to step2.
-- Select "Configure all settings here", "Python 3" and enter "pip install -r requirements.txt", "python main.py", "8080" as shown.
+- Select "Configure all settings here", "Python 3" and enter "pip install -r requirements.txt && python download_model.py", "python main.py", "8080" as shown.
 
 ![image](https://user-images.githubusercontent.com/90477174/151688085-cfc04aca-1f12-412f-8a4a-93ce676b5a24.png)
 
