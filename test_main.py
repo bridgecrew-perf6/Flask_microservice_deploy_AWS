@@ -1,4 +1,4 @@
-from main import translate
+from main import translate, app
 
 def test_translate():
     text = "一个人"
